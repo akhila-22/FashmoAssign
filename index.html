@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formm">
+        <h1>Car Billing Form</h1>
+        <form id="bill">
+            <label for="carmodel">Car Model:</label>
+            <select id="carmodel" name="carmodel">
+                <option value="Polo Trendline">Polo Trendline - ₹8,70,000</option>
+                <option value="Polo Highline">Polo Highline - ₹10,09,000</option>
+                <option value="Virtus Trendline">Virtus Trendline - ₹11,05,000</option>
+                <option value="Virtus Highline">Virtus Highline - ₹13,08,000</option>
+                <option value="Taigun Trendline">Taigun Trendline - ₹14,89,000</option>
+                <option value="Taigun Highline">Taigun Highline - ₹15,42,000</option>
+                <option value="Taigun Topline">Taigun Topline - ₹17,71,000</option>
+            </select><br>
+            
+            <div class="check">
+                <label for="insurance">Insurance:</label>
+                <input type="checkbox" id="insurance" name="insurance">
+            </div>
+            
+            <div class="check">
+                <label for="accessor">Additional Accessories:</label>
+                <input type="checkbox" id="accessor" name="accessor">
+            </div>
+
+            <label for="discount">Dealer Discount:</label>
+            <input type="number" id="discount" name="discount" placeholder="Enter discount"><br>
+
+            <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        </form>
+    </div>
+</body>
+</html>
