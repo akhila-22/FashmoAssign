@@ -26,7 +26,7 @@ function calculateTotalCost() {
     errorMessages.innerHTML = "";
 
     if (!insurance && !accessor && discount > 0) {
-        errorMessages.innerHTML = "Any one of the additional features have to be addded to avail the discount";
+        errorMessages.innerHTML = "Any one of the additional features have to be added to avail the discount";
         return;
     }
     if (discount > 30000) {
