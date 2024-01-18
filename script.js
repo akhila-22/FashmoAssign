@@ -34,7 +34,7 @@ function calculateTotalCost() {
         discount = 30000;
     }
     var totalcost = carcost + additionalcost["RTO"];
-    totlcost += additionalcost["TCS charges"];
+    totalcost += additionalcost["TCS charges"];
     totalcost += insurance ? additionalcost["Insurance"] : 0;
     totalcost += accessor ? additionalcost["Additional Accessories"] : 0;
     totalcost -= discount;
