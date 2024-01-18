@@ -29,13 +29,15 @@ function calculateTotalCost() {
         errorMessages.innerHTML = "Any one of the additional features have to be addded to avail the discount";
         return;
     }
-
+    if (discount > 30000) {
+        errorMessages.innerHTML = "Maximum discount to be applied should not cross 30,000.Only 30,000 will be applied as discount";
+        discount = 30000;
+    }
     var totalcost = carcost + additionalcost["RTO"];
     totlcost += additionalcost["TCS charges"];
     totalcost += insurance ? additionalcost["Insurance"] : 0;
     totalcost += accessor ? additionalcost["Additional Accessories"] : 0;
     totalcost -= discount;
     console.log(totalcost)
-
     document.getElementById("totalcost").value = totalcost.toFixed(2);
 }
